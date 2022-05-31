@@ -16,7 +16,8 @@ Internamente utiliza el patron MVC aplicado a express.
 
 # Muestra de la aplicación en Video:
 
-[Ver video](https://youtu.be/nqhxEBBq-og)
+<a href="https://youtu.be/nqhxEBBq-og" target="_blank">Ver video</a>
+
 
 # Como instalar
 
