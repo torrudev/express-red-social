@@ -16,7 +16,7 @@ Internamente utiliza el patron MVC aplicado a express.
 
 # Muestra de la aplicación en Video:
 
-[Ver video](appShowcase.mp4)
+[Ver video](https://youtu.be/nqhxEBBq-og)
 
 # Como instalar
 
