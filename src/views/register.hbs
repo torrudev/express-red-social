@@ -1,0 +1,44 @@
+<main class='index'>
+  <header class='masterhead d-flex'>
+    <div class='container my-auto'>
+      <div class='card col-md-4 mx-auto mt-5 bg-light'>
+        <div class='card-body'>
+          <div class="text-center">
+            <div class='btn-group'>
+              <a href='/login' class='btn btn-outline-primary'>
+                Login
+              </a>
+              <a href='/registro' class='btn btn-primary'>
+                Registrarse
+              </a>
+            </div>
+            <hr class="mb-3">
+            <h2 class='mb-3'>Red social Thinking Network</h2>
+            <h5 class='mb-4'>
+              Descubre y comparte pensamientos con el mundo
+            </h3>
+          </div>
+          <form action="/registro" method="post">
+            <div class="mb-3">
+              <label for="username" class="form-label">Nombre de usuario</label>
+              <input type="text" class="form-control" name="username">
+            </div>
+            <div class="mb-3">
+              <label for="nickname" class="form-label">Nickname Público</label>
+              <input type="text" class="form-control" name="nickname">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary">
+                Registrarse
+              </button>
+          </form>          
+        </div>
+      </div>
+    </div>
+
+  </header>
+</main>

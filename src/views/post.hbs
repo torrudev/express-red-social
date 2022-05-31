@@ -1,0 +1,26 @@
+<div class='container col-md-5 p-0 mt-5'>
+  <section>
+    <a href="/inicio" class="btn btn-link mb-3">Volver</a>
+    {{>postItemIndividual post}}
+    {{#if isCurrentUser}}
+      <div class="btn-group">
+        <a href="/post/{{post.id}}/editar" class="btn btn-secondary">Editar</a>
+        <a href="/post/{{post.id}}/borrar" class="btn btn-danger">Borrar</a>
+      </div>
+    {{/if}}
+  </section>
+  <hr>
+  <section>
+    <h4>Respuestas:</h3>
+    <article>
+      {{#each comments}}
+        {{> postItemIndividual}}
+      {{else}}
+        <p>No hay respuestas</p>
+      {{/each}}
+    </article>
+    <article>
+      {{>createResponse}}
+    </article>
+  </section>
+</div>

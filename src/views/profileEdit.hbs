@@ -1,0 +1,112 @@
+<main>
+  <div class='container col-md-5 p-0'>
+
+    <header class='mb-4 mt-5'>
+      <div class='alert alert-warning' role='alert'>
+        Debajo podras editar tu perfil de usuario y tu cuenta.
+        <a href='/usuario/{{user.id}}'>Volver a mi perfil</a>
+      </div>
+    </header>
+    <h3 class='mt-4'>Perfil</h3>
+    <hr />
+    <form
+      class='card card-body bg-light'
+      action='/usuario/{{user.id}}/editar'
+      method='post'
+    >
+      <h4 class='card-title mb-4'>
+        Actualizar tu bio
+      </h4>
+      <div class='mb-3'>
+        <label for='bio' class='form-label'>Escribe algo sobre ti</label>
+        <textarea
+          name='bio'
+          class='form-control'
+          rows='6'
+        >{{user.bio}}</textarea>
+      </div>
+      <div>
+        <button class='btn btn-secondary'>Actualizar</button>
+      </div>
+    </form>
+    <h3 class='mt-4'>Cuenta</h3>
+    <hr />
+    <form
+      class='card card-body bg-light'
+      action='/usuario/{{user.id}}/editar'
+      method='post'
+    >
+      <h4 class='card-title mb-4'>
+        Cambiar nickname publico
+      </h4>
+      <div class='mb-3'>
+        <label for='nickname' class='form-label'>Nuevo nickname público</label>
+        <input type='text' name='nickname' class='form-control' />
+      </div>
+      <div class='mb-3'>
+        <label for='repitedPassword' class='form-label'>Repite tu contraseña</label>
+        <input type='text' name='repitedPassword' class='form-control' />
+      </div>
+      <div>
+        <button class='btn btn-secondary'>Actualizar</button>
+      </div>
+    </form>
+
+    <form
+      class='card card-body bg-light'
+      action='/usuario/{{user.id}}/editar'
+      method='post'
+    >
+      <h4 class='card-title mb-4'>
+        Cambiar username para el login
+      </h4>
+      <div class='mb-3'>
+        <label for='username' class='form-label'>Tu nuevo username para el login</label>
+        <input type='text' name='username' class='form-control' />
+      </div>
+      <div class='mb-3'>
+        <label for='repitedPassword' class='form-label'>Repite tu contraseña</label>
+        <input type='text' name='repitedPassword' class='form-control' />
+      </div>
+      <div>
+        <button class='btn btn-secondary'>Actualizar</button>
+      </div>
+    </form>
+
+    <form
+      class='card card-body bg-light'
+      action='/usuario/{{user.id}}/editar'
+      method='post'
+    >
+      <h4 class='card-title mb-4'>
+        Cambiar contraseña para el login
+      </h4>
+      <div class='mb-3'>
+        <label for='password' class='form-label'>Tu nueva contraseña</label>
+        <input type='text' name='password' class='form-control' />
+      </div>
+      <div class='mb-3'>
+        <label for='repitedPassword' class='form-label'>Repite tu contraseña
+          actual
+        </label>
+        <input type='text' name='repitedPassword' class='form-control' />
+      </div>
+      <div>
+        <button class='btn btn-secondary'>Actualizar</button>
+      </div>
+    </form>
+
+    <div class='alert alert-danger' role='alert'>
+      <p>
+        Aqui podras eliminar tu cuenta.
+      </p>
+      <p>
+        ¡Esta acción no se puede deshacer, piensalo bien antes de continuar, se
+        perderan todos tus datos!
+      </p>
+      <a href='/usuario/{{user.id}}/eliminar' class='btn btn-danger'>
+        Quiero eliminar mi cuenta
+      </a>
+    </div>
+  </div>
+</main>

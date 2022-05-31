@@ -1,0 +1,23 @@
+<main>
+  <div class='container col-md-5 p-0'>
+    <div class='alert alert-danger mt-5' role='alert'>
+      <p>
+        Estas a punto de eliminar tu cuenta de usuario.
+      </p>
+      <p>
+        ¡Esta acción no se puede deshacer, piensalo bien antes de continuar, se
+        perderan todos tus datos!
+      </p>
+      <form action='/usuario/{{user.id}}/eliminar' method='post'>
+        <a href='/usuario/{{user.id}}' class='btn btn-light me-3'>Volver</a>
+        <div class='btn-group'>
+          <input
+            type='submit'
+            class='btn btn-danger'
+            value='Quiero eliminar mi cuenta'
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
